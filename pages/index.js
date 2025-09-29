@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import Head from "next/head"
 
@@ -53,7 +51,6 @@ export default function VibeAnalysisPage() {
         <title>VibeMatch - Discover Music Through Visual Vibes</title>
         <meta name="description" content="Analyze images and discover songs that match their emotional essence" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -63,7 +60,7 @@ export default function VibeAnalysisPage() {
             <div className="flex items-center gap-3">
               <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3l14 9-14 9V3z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                 </svg>
               </div>
               <div>
@@ -114,35 +111,9 @@ export default function VibeAnalysisPage() {
                   <button
                     onClick={handleAnalyze}
                     disabled={isLoading || !imageUrl.trim()}
-                    className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                    className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-purple-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
                   >
-                    {isLoading ? (
-                      <div className="flex items-center">
-                        <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
-                          <circle
-                            className="opacity-25"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                            stroke="currentColor"
-                            strokeWidth="4"
-                          ></circle>
-                          <path
-                            className="opacity-75"
-                            fill="currentColor"
-                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                          ></path>
-                        </svg>
-                        Analyzing...
-                      </div>
-                    ) : (
-                      <div className="flex items-center">
-                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3l14 9-14 9V3z" />
-                        </svg>
-                        Analyze Vibe
-                      </div>
-                    )}
+                    {isLoading ? "Analyzing..." : "Analyze"}
                   </button>
                 </div>
 
@@ -152,106 +123,67 @@ export default function VibeAnalysisPage() {
                   </div>
                 )}
 
-                {/* Image Preview */}
                 {imageUrl && (
                   <div className="flex justify-center">
-                    <div className="relative max-w-md w-full">
-                      <img
-                        src={imageUrl || "/placeholder.svg"}
-                        alt="Preview"
-                        className="w-full h-64 object-cover rounded-xl border border-white/20"
-                        onError={() => setError("Failed to load image. Please check the URL.")}
-                      />
-                    </div>
+                    <img
+                      src={imageUrl}
+                      alt="Preview"
+                      className="max-w-md w-full h-64 object-cover rounded-xl border border-white/20"
+                      onError={() => setError("Failed to load image")}
+                    />
                   </div>
                 )}
               </div>
             </div>
 
-            {/* Results Section */}
+            {/* Results */}
             {result && (
               <div className="space-y-6">
-                {/* Vibe Analysis */}
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl">
-                  <div className="p-6 border-b border-white/10">
-                    <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                      <svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3l14 9-14 9V3z" />
-                      </svg>
-                      Vibe Analysis
-                    </h3>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-gray-300 leading-relaxed">{result.vibeAnalysis}</p>
-                  </div>
+                {/* Analysis */}
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">Vibe Analysis</h3>
+                  <p className="text-gray-300 leading-relaxed">{result.analysis}</p>
                 </div>
 
-                {/* Matched Songs */}
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl">
-                  <div className="p-6 border-b border-white/10">
-                    <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                      <svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
-                        />
-                      </svg>
-                      Matched Songs
-                    </h3>
-                    <p className="text-gray-400 mt-1">Songs that capture the essence of your image</p>
-                  </div>
-                  <div className="p-6">
+                {/* Songs */}
+                {result.matches && result.matches.length > 0 && (
+                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl p-6">
+                    <h3 className="text-xl font-bold text-white mb-4">Matching Songs ({result.matches.length})</h3>
                     <div className="grid gap-4 md:grid-cols-2">
-                      {result.matchedSongs.map((song, index) => (
+                      {result.matches.map((song, index) => (
                         <div
                           key={index}
                           className="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-purple-500/30 transition-colors"
                         >
                           <div className="flex items-start justify-between gap-3">
                             <div className="flex-1 min-w-0">
-                              <h4 className="font-semibold text-white truncate">{song.title}</h4>
-                              <p className="text-gray-400 text-sm truncate">{song.artist}</p>
+                              <h4 className="font-semibold text-white">{song.title}</h4>
+                              <p className="text-gray-400 text-sm">{song.artist}</p>
+                              {song.matchingTags && song.matchingTags.length > 0 && (
+                                <div className="flex flex-wrap gap-1 mt-2">
+                                  {song.matchingTags.slice(0, 3).map((tag, i) => (
+                                    <span key={i} className="text-xs bg-purple-500/20 text-purple-300 px-2 py-1 rounded">
+                                      {tag}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
                             </div>
-                            <span className="bg-purple-500/20 text-purple-300 border border-purple-500/30 px-2 py-1 rounded-lg text-sm font-medium shrink-0">
-                              {song.matchPercentage}%
+                            <span className="bg-purple-500/20 text-purple-300 border border-purple-500/30 px-3 py-1 rounded-lg text-sm font-medium shrink-0">
+                              {song.matchScore}
                             </span>
                           </div>
                         </div>
                       ))}
                     </div>
                   </div>
-                </div>
-              </div>
-            )}
+                )}
 
-            {/* Loading State */}
-            {isLoading && (
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl">
-                <div className="py-12">
-                  <div className="flex flex-col items-center gap-4">
-                    <svg className="w-8 h-8 animate-spin text-purple-400" fill="none" viewBox="0 0 24 24">
-                      <circle
-                        className="opacity-25"
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                      ></circle>
-                      <path
-                        className="opacity-75"
-                        fill="currentColor"
-                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                      ></path>
-                    </svg>
-                    <div className="text-center">
-                      <p className="font-medium text-white">Analyzing your image...</p>
-                      <p className="text-sm text-gray-400">Finding songs that match your vibe</p>
-                    </div>
+                {result.matches && result.matches.length === 0 && (
+                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl p-6">
+                    <p className="text-gray-400 text-center">No matching songs found. Try a different image!</p>
                   </div>
-                </div>
+                )}
               </div>
             )}
           </div>
