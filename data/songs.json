@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "title": "Girl Like Me",
+    "artist": "PinkPantheress",
+    "tags": ["girlypop", "energetic", "dance", "funky", "funny", "Y2K", "pink", "purple", "red", "cute dresses", "UK vibe", "night", "day", "party", "street diva", "upbeat", "cool flowers", "girlies", "mirror photo", "goofy", "nightclub", "run"]
+  },
+  {
+    "id": 2,
+    "title": "Televised",
+    "artist": "HUNNY",
+    "tags": ["good life", "smile", "friends", "hike", "nature", "park", "streets", "daytime", "morning", "warmth", "sun", "fresh", "yellow", "orange", "green", "blue", "content", "sky", "grass", "bright", "travel", "indie"]
+  },
+  {
+    "id": 3,
+    "title": "Mis Horas",
+    "artist": "Los Abuelos de la Nada",
+    "tags": ["cool", "old", "vintage", "retro", "Spanish", "Argentina", "wood", "street", "goofy", "macho", "laid back", "relaxed", "upbeat", "nostalgic", "cigarette smoker", "guy walks", "Latino"]
+  },
+  {
+    "id": 4,
+    "title": "Children",
+    "artist": "Robert Miles",
+    "tags": ["2000s", "rich kids vibe", "mansion", "villa", "NYC", "Manhattan apartment", "cars", "iPhone 4", "cash", "money", "old money", "parties", "classy", "elegant", "silver", "gold", "VIP", "luxury", "young", "nostalgic", "paparazzi", "cool", "reuniting with soul"]
+  },
+  {
+    "id": 5,
+    "title": "4 Minutes",
+    "artist": "Madonna, Justin Timberlake, Timbaland",
+    "tags": ["dance", "active", "workout", "run", "sexy", "sweaty", "action", "moving", "cool", "Y2K", "2000s", "classy", "fashionable", "colorful", "fast", "achieving"]
+  },
+  {
+    "id": 6,
+    "title": "Shut Up And Drive",
+    "artist": "Rihanna",
+    "tags": ["girly", "Y2K", "cool", "fast", "dance", "party", "makeup", "dresses", "cars", "independent", "main character", "Barbie", "lipstick", "run", "cool hairstyle", "get ready", "pink", "purple", "elegant", "shiny", "confident"]
+  },
+  {
+    "id": 7,
+    "title": "A$AP Forever",
+    "artist": "A$AP Rocky, Moby, T.I., Kid Cudi",
+    "tags": ["cool", "swag", "freedom", "movement", "statement", "confidence", "majestic", "clean", "chains", "streets", "nature", "big things", "cars", "people", "dissociation", "life", "night", "day", "buildings", "New York", "big city life"]
+  },
+  {
+    "id": 8,
+    "title": "Shake Back",
+    "artist": "Kodak Black",
+    "tags": ["goofy", "funny", "chill", "relaxed", "swag", "positive", "friendly", "on your own"]
+  },
+  {
+    "id": 9,
+    "title": "Fall In Love",
+    "artist": "Phantogram",
+    "tags": ["night", "desperate", "angry", "a bit romantic", "suffering", "blue", "soft", "hard", "silver", "black", "dark blue", "purple", "trance-like state", "night walk", "drive", "locking in", "leather", "strong"]
+  },
+  {
+    "id": 10,
+    "title": "I Like It",
+    "artist": "Enrique Iglesias, Pitbull",
+    "tags": ["party life", "cool", "happy", "uplifted", "strong", "confident", "sexy", "hot", "inspirational", "Y2K", "2000s", "enjoying", "flow moment", "like Old Spice", "ayo this is my show"]
+  },
+  {
+    "id": 11,
+    "title": "M.I.A",
+    "artist": "Feng",
+    "tags": ["cool", "swag", "niche taste", "underground", "young", "rich", "grey", "black", "white", "minimalistic", "chains", "confidence", "goofy", "UK"]
+  },
+  {
+    "id": 12,
+    "title": "Sacrifice",
+    "artist": "Elton John",
+    "tags": ["good moment", "warm", "family", "love", "people", "reflecting life", "nature", "good day", "calmness", "nostalgia", "road trip", "sweet", "sad", "hugs", "aesthetic", "night walk", "old-fashioned", "vintage", "retro"]
+  },
+  {
+    "id": 13,
+    "title": "Dream",
+    "artist": "Husbands",
+    "tags": ["sad but cool", "idgaf vibe", "acceptance", "days", "street", "normal life", "shirts", "white", "grey", "static", "moving"]
+  },
+  {
+    "id": 14,
+    "title": "Class Historian",
+    "artist": "BRONCHO",
+    "tags": ["young", "summer", "friends", "cars", "affection", "reflection", "enjoying small moments", "sun", "sea", "beach", "grass", "sky", "clouds", "smiles", "school"]
+  },
+  {
+    "id": 15,
+    "title": "Ma Quale Idea",
+    "artist": "Pino D'Angiò",
+    "tags": ["funky", "groovy", "cool", "macho", "European", "café", "street fashion", "bold", "confident", "uplifted", "yellow", "red", "green", "night", "day", "restaurant", "cars", "sun", "beach", "cinematic", "Italian"]
+  },
+  {
+    "id": 16,
+    "title": "Song For Denise",
+    "artist": "Piano Fantasia",
+    "tags": ["cars", "cool", "walking", "confident", "meme-like", "showing off", "wearing suit", "men enjoying life", "gracious", "retro", "illegal", "planes"]
+  },
+  {
+    "id": 17,
+    "title": "Love Lost (feat. The Temper Trap)",
+    "artist": "Mac Miller",
+    "tags": ["pink", "white", "light colors", "sad", "affectionate", "love", "romantic", "friends", "street", "refreshing", "opening window", "moving to a new city", "clean", "lonely", "new culture", "aesthetic"]
+  },
+  {
+    "id": 18,
+    "title": "24K Magic",
+    "artist": "Bruno Mars",
+    "tags": ["party", "friends", "flexing", "hyped up", "night time", "streets", "cool places", "neon lights", "luxury", "hot people", "flirty mood", "funky", "groovy"]
+  },
+  {
+    "id": 19,
+    "title": "Smooth Operator",
+    "artist": "Sade",
+    "tags": ["sun", "gold", "90s fashion", "cool", "free", "bold", "confident", "luxury", "palms", "cars", "love", "flirt", "city life", "business", "nostalgia", "getting ready", "classy look"]
+  },
+  {
+    "id": 20,
+    "title": "19-2000 (Soulchild Remix)",
+    "artist": "Gorillaz",
+    "tags": ["funky", "niche", "indie", "punky", "2000", "cool", "uplifting", "moving", "interesting", "green", "pink", "purple", "black", "dark colors", "goofy", "happy", "space", "jungles", "cartoonish", "skaters", "rockers", "cool kids"]
+  },
+  {
+    "id": 21,
+    "title": "Omote",
+    "artist": "Yuki Chiba",
+    "tags": ["Asian", "people", "crazy rich", "sushi", "Japan", "chains", "cool bars", "Smoke", "streets", "oversized stuff", "flexing", "showing off", "money", "cling"]
+  },
+  {
+    "id": 22,
+    "title": "Get Down On It",
+    "artist": "Kool & The Gang",
+    "tags": ["funky", "disco", "cool", "happy", "funny", "weekend", "free", "life is good", "gold", "dancing", "old cities", "vintage", "goofy", "ready for partying"]
+  },
+  {
+    "id": 23,
+    "title": "Cry Me A River",
+    "artist": "Justin Timberlake",
+    "tags": ["2000s", "cool", "hot", "rich kids", "flexing in a sad way", "grey", "white", "party", "evening", "night", "confident", "rain through car", "sexy"]
+  },
+  {
+    "id": 24,
+    "title": "Feel It All Around",
+    "artist": "Washed Out",
+    "tags": ["pink", "purple", "sky", "aesthetic", "vibey", "night drive", "nature", "street", "foggy", "sad", "reflective", "thoughtful"]
+  },
+  {
+    "id": 25,
+    "title": "Bizarre Love Triangle",
+    "artist": "New Order",
+    "tags": ["cool", "night walk", "aesthetic", "city lights", "cars", "rain", "Europe", "bars", "drinks", "fur fashion", "costumes", "suits", "masquerade", "divine", "retro", "80s synth", "vintage", "blue", "grey", "red", "black", "normal life", "technologic"]
+  },
+  {
+    "id": 26,
+    "title": "Born Slippy (Nuxx)",
+    "artist": "Underworld",
+    "tags": ["nostalgic", "broke and young", "free", "dirty", "ripped", "old", "post-Soviet aesthetic", "football boys", "cyberpunk", "video games", "older brother core"]
+  },
+  {
+    "id": 27,
+    "title": "The Salmon Dance",
+    "artist": "The Chemical Brothers",
+    "tags": ["quirky", "interesting", "new", "niche", "ordinary life", "cartoonish", "movie", "background music", "reel intro", "annoyed vibe", "goofy"]
+  },
+  {
+    "id": 28,
+    "title": "Sluchaynaya",
+    "artist": "Ivan Dorn",
+    "tags": ["majestic", "cool", "separated", "isolated", "smoke", "streets", "night", "car drive", "mysterious", "confident", "slow reverb", "locking in", "focus", "minimalist", "fashion", "groovy", "like Daft Punk"]
+  },
+  {
+    "id": 29,
+    "title": "Luby",
+    "artist": "Hiro",
+    "tags": ["romantic", "Almaty", "cool", "young love", "hot", "whispers", "flowers", "chocolate", "first dates", "hoodies", "roses", "VIP", "2000s prime", "Kazakh vibe"]
+  },
+  {
+    "id": 30,
+    "title": "Could Be Wrong",
+    "artist": "Lostboy Jay",
+    "tags": ["house", "rally cars", "Zara playlist", "dancing", "moving", "rising high", "tall buildings", "parties", "inspiring", "flow state", "cooking (slang)"]
+  },
+  {
+    "id": 31,
+    "title": "Little L",
+    "artist": "Jamiroquai",
+    "tags": ["cool", "fashion", "vogue", "good life", "dancefloor", "New York", "Paris", "Milan", "magazines", "shining", "stylish", "street", "café", "love"]
+  },
+  {
+    "id": 32,
+    "title": "Get Busy",
+    "artist": "Mr. Lee",
+    "tags": ["vogue", "fashion", "90s house", "cars", "beating", "people", "flex", "working", "hustling", "90s swag", "classy", "dancing", "moving", "nighttime"]
+  },
+  {
+    "id": 33,
+    "title": "CRANK",
+    "artist": "Playboi Carti",
+    "tags": ["swag", "flex", "black", "rap", "chains", "street", "attitude", "black wear", "fashion", "minimalistic", "cars", "men"]
+  },
+  {
+    "id": 34,
+    "title": "My Jinji",
+    "artist": "Sunset Rollercoaster",
+    "tags": ["calm", "dizzy", "purple", "aesthetic", "sad", "reconnect", "flowers", "water", "nostalgic", "daytime", "quiet", "affectionate"]
+  },
+  {
+    "id": 35,
+    "title": "Jasmine",
+    "artist": "DPR LIVE",
+    "tags": ["Korean vibe", "fashion", "minimalistic", "cute", "flowers", "love", "hugs", "romantic", "daytime", "chemistry", "lavender"]
+  },
+  {
+    "id": 36,
+    "title": "Déjà Vu",
+    "artist": "Inna, Bob Taylor",
+    "tags": ["sea", "summer", "beach", "aquapark", "fun", "party", "nostalgic", "2000s", "Romanian pop", "car drives", "shashlik"]
+  },
+  {
+    "id": 37,
+    "title": "More, More, More",
+    "artist": "Andrea True Connection",
+    "tags": ["New York", "classy life", "adulthood", "Sex And The City vibe", "movie", "normal life POV", "pink", "light blue", "dresses", "glamour", "drinks", "cocktails", "good time", "sex and the city"]
+  },
+  {
+    "id": 38,
+    "title": "Pop Star",
+    "artist": "Coco & Clair Clair",
+    "tags": ["solo", "girly", "bad attitude", "nepo baby", "model", "cameras", "irresponsible", "cute", "enjoying"]
+  },
+  {
+    "id": 39,
+    "title": "Sadnecessary",
+    "artist": "Milky Chance",
+    "tags": ["Woodstock", "nature", "reflection", "chill", "healthy", "sad", "melancholic", "white", "brown", "cotton", "forest"]
+  },
+  {
+    "id": 40,
+    "title": "A La Plage",
+    "artist": "Juniore",
+    "tags": ["French", "chic", "loose", "morning", "beach", "Monday", "boredom", "repetitive routine"]
+  },
+  {
+    "id": 41,
+    "title": "La Fessée*",
+    "artist": "Claire Laffut",
+    "tags": ["fashion", "chic", "streetstyle", "cafés", "croissants", "influencer vibe", "normal outfits", "daytime", "girly"]
+  },
+  {
+    "id": 42,
+    "title": "Tuesday",
+    "artist": "iLoveMakonnen, Drake",
+    "tags": ["drunk", "smoked", "clubs", "people", "night", "street", "blue", "red", "black", "dark"]
+  },
+  {
+    "id": 43,
+    "title": "Whatcha See Is Whatcha Get",
+    "artist": "The Dramatics",
+    "tags": ["cinematic", "walk", "cooking", "doing something", "classy", "street life", "city life"]
+  },
+  {
+    "id": 44,
+    "title": "Dealer",
+    "artist": "Lana Del Rey, Miles Kane",
+    "tags": ["woman agony", "night", "silence", "nature", "low contrast", "obscure", "sad", "melancholic", "weak", "ragy", "dark feminine", "smoking"]
+  },
+  {
+    "id": 45,
+    "title": "How Soon Is Now?",
+    "artist": "The Smiths",
+    "tags": ["majestic vibe", "godly", "adventure", "sun", "wind", "bold", "confident", "smells like men's perfume", "trains", "freedom", "determination"]
+  },
+  {
+    "id": 46,
+    "title": "Hit 'Em Up",
+    "artist": "2Pac",
+    "tags": ["West Side", "rap", "hip-hop", "2000s", "swag", "cars", "summer", "Cali", "wassup ayo", "mafia", "groovy"]
+  },
+  {
+    "id": 47,
+    "title": "Fauxllennium",
+    "artist": "TV Girl, George Clanton",
+    "tags": ["eye opening", "indie", "pink", "purple", "black", "white", "high contrast", "artsy", "cartoonish", "big eyelashes", "sky hues", "big landscape"]
+  },
+  {
+    "id": 48,
+    "title": "A New Kind Of Love",
+    "artist": "Frou Frou (Imogen Heap, Guy Sigsworth)",
+    "tags": ["fresh start", "morning", "loving life", "loving people", "calmness inside", "breathing", "pink morning", "kinda sad vibes too", "mom's perfume"]
+  },
+  {
+    "id": 49,
+    "title": "DtMF",
+    "artist": "Bad Bunny",
+    "tags": ["family", "sad", "missing", "Latino", "travel", "memories", "love", "friends", "melancholic"]
+  },
+  {
+    "id": 50,
+    "title": "Set Adrift On Memory Bliss",
+    "artist": "PM Dawn",
+    "tags": ["life is good", "hip-hop", "chill", "fashion", "morning", "sly", "coffee", "cafés", "streets", "wandering around"]
+  },
+  {
+    "id": 51,
+    "title": "Trix",
+    "artist": "Slater",
+    "tags": ["videogame-ish", "trippy", "young", "cars", "acidy", "high contrast", "confident", "solo", "electric"]
+  },
+  {
+    "id": 52,
+    "title": "Passin' Me By*",
+    "artist": "The Pharcyde",
+    "tags": ["old-school hip-hop", "vintage", "fashiony", "brown", "dark", "streets", "favelas", "graffiti", "sleazy", "cool", "jazzy", "artsy"]
+  },
+  {
+    "id": 53,
+    "title": "Instant Crush",
+    "artist": "Daft Punk, Julian Casablancas",
+    "tags": ["heartbreak", "situationship", "electric", "dark", "loner", "blue", "silvery", "sharp", "melancholia", "love", "affection"]
+  },
+  {
+    "id": 54,
+    "title": "My Sharona",
+    "artist": "The Knack",
+    "tags": ["moving", "active", "rock", "high energy", "romantic", "hot", "on edge", "vintage", "cool vibe"]
+  }
+]
