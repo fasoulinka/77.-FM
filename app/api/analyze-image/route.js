@@ -31,33 +31,41 @@ export async function POST(request) {
 
     const analysis = response.choices[0].message.content;
     
-    // Extract keywords
-    const keywords = analysis.toLowerCase()
-      .split(/[\s,.:;!?()]+/)
-      .filter(word => word.length > 2);
-    
-    // Match songs based on tag overlap
+    // Better matching - count absolute matches, not percentages
+    const analysisLower = analysis.toLowerCase();
+
     const matches = songs.map(song => {
-      const songTags = song.tags.map(t => t.toLowerCase());
-      const matchingTags = songTags.filter(tag => 
-        keywords.some(keyword => 
-          keyword.includes(tag) || 
-          tag.includes(keyword) ||
-          keyword === tag
-        )
-      );
+      let matchScore = 0;
+      const matchedTags = [];
       
-      const score = matchingTags.length > 0 
-        ? (matchingTags.length / songTags.length) * 100 
-        : 0;
+      song.tags.forEach(tag => {
+        const tagLower = tag.toLowerCase();
+        
+        // Direct substring match in analysis
+        if (analysisLower.includes(tagLower)) {
+          matchScore += 10;
+          matchedTags.push(tag);
+        }
+        // Check if individual words from multi-word tags match
+        else {
+          const tagWords = tagLower.split(' ');
+          const matchingWords = tagWords.filter(word => 
+            word.length > 3 && analysisLower.includes(word)
+          );
+          if (matchingWords.length > 0) {
+            matchScore += 5 * matchingWords.length;
+            matchedTags.push(tag);
+          }
+        }
+      });
       
       return {
         ...song,
-        matchScore: Math.round(score),
-        matchingTags
+        matchScore,
+        matchingTags: matchedTags
       };
     })
-    .filter(song => song.matchScore > 10)
+    .filter(song => song.matchScore > 0)
     .sort((a, b) => b.matchScore - a.matchScore)
     .slice(0, 10);
 
